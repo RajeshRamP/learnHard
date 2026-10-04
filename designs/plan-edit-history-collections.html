@@ -1,0 +1,177 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Plan mockups</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#eef1f6;color:#111827;padding:28px 32px}
+h1{font-size:26px;margin-bottom:4px}
+.sub{color:#4b5563;font-size:14px;margin-bottom:22px}
+.sec{background:#fff;border-radius:16px;padding:20px 22px 24px;margin-bottom:26px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.sec h2{font-size:20px;margin-bottom:4px}
+.sec .why{font-size:13.5px;color:#374151;margin-bottom:16px;line-height:1.5}
+.row{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap}
+.phone{width:330px;border:10px solid #111827;border-radius:34px;background:#f9fafb;overflow:hidden;flex:none}
+.bar{background:#2563eb;color:#fff;padding:12px 14px;font-weight:700;font-size:15px}
+.bar small{display:block;font-weight:400;font-size:11px;opacity:.85}
+.body{padding:12px}
+.cap{font-size:12.5px;font-weight:700;color:#1f2937;margin:2px 0 8px;text-align:center;width:330px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.lbl{font-size:11px;color:#6b7280;margin-bottom:3px;font-weight:600}
+.in{border:1px solid #d1d5db;border-radius:9px;padding:8px 10px;font-size:14px;background:#fff;margin-bottom:9px}
+.in.empty{color:#9ca3af}
+.in.warn{border-color:#f59e0b;background:#fffbeb}
+.line{border:1px solid #e5e7eb;border-radius:10px;padding:8px 10px;margin-bottom:8px;background:#fff}
+.line .top{display:flex;justify-content:space-between;font-weight:700;font-size:14px}
+.line .x{color:#dc2626;font-weight:700}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;border-radius:999px;padding:2px 8px;margin-top:4px}
+.t-blue{background:#dbeafe;color:#1d4ed8}.t-green{background:#dcfce7;color:#15803d}.t-amber{background:#fef3c7;color:#b45309}.t-red{background:#fee2e2;color:#b91c1c}.t-gray{background:#f3f4f6;color:#4b5563}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.mini{border:1px solid #d1d5db;border-radius:8px;padding:6px 8px;font-size:13px;background:#fff}
+.mini b{display:block;font-size:10px;color:#6b7280;font-weight:600}
+.btn{display:block;text-align:center;border-radius:10px;padding:10px;font-weight:700;font-size:14px;margin-top:8px}
+.b-blue{background:#2563eb;color:#fff}.b-green{background:#16a34a;color:#fff}.b-out{border:1px solid #d1d5db;color:#374151;background:#fff}
+.search{border:1px solid #2563eb;border-radius:9px;padding:8px 10px;font-size:14px;background:#fff}
+.drop{border:1px solid #e5e7eb;border-top:none;border-radius:0 0 9px 9px;background:#fff;margin-bottom:9px}
+.drop div{padding:8px 10px;font-size:13.5px;border-top:1px solid #f3f4f6}
+.drop div.hit{background:#eff6ff;font-weight:600}
+.note{font-size:11.5px;border-radius:9px;padding:8px 10px;margin:6px 0;line-height:1.45}
+.n-blue{background:#eff6ff;color:#1e3a8a}.n-amber{background:#fffbeb;color:#92400e}.n-green{background:#f0fdf4;color:#166534}
+.tbl{width:100%;border-collapse:collapse;font-size:11.5px}
+.tbl th{background:#f3f4f6;text-align:left;padding:5px 4px;font-size:10.5px;color:#4b5563}
+.tbl td{padding:6px 4px;border-top:1px solid #e5e7eb;vertical-align:top}
+.tbl tr.sel td{background:#eff6ff}
+.web{flex:1;min-width:700px;border:1px solid #d1d5db;border-radius:12px;overflow:hidden;background:#fff}
+.wtop{background:#0f172a;color:#fff;padding:10px 16px;font-weight:700;font-size:14px;display:flex;justify-content:space-between}
+.wbody{padding:14px 16px}
+.wt{width:100%;border-collapse:collapse;font-size:13px}
+.wt th{background:#f8fafc;text-align:left;padding:8px;font-size:11.5px;color:#475569;border-bottom:1px solid #e2e8f0}
+.wt td{padding:9px 8px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+.chip{display:inline-block;border:1px solid #cbd5e1;border-radius:999px;padding:4px 12px;font-size:12px;margin-right:6px}
+.chip.on{background:#0f172a;color:#fff;border-color:#0f172a}
+.sbtn{display:inline-block;border-radius:7px;padding:5px 10px;font-size:12px;font-weight:700;margin-right:4px}
+.arrow{font-size:30px;color:#94a3b8;align-self:center}
+.stats{display:flex;gap:10px;margin-bottom:12px}
+.stat{flex:1;border:1px solid #e2e8f0;border-radius:10px;padding:10px 12px}
+.stat b{display:block;font-size:20px}
+.stat span{font-size:11.5px;color:#64748b}
+</style></head><body>
+<h1>Plan — 3 changes (mockups)</h1>
+<div class="sub">Owner app order edit · Driver history edit · Driver collections checked by the office. Nothing is built yet.</div>
+
+<!-- 1 -->
+<div class="sec">
+<h2>1 · Owner app — edit an order and split it (same product again)</h2>
+<div class="why"><b>Today:</b> picking a product that is already on the order does nothing (the app silently ignores it). <b>After:</b> the same product can be added again; on Save the first line stays on this order and every added line becomes its own new order, grouped with it (the server already does this).</div>
+<div class="row">
+ <div>
+ <div class="cap">① Edit order SO #812 — search &amp; add Flyash Bricks again</div>
+ <div class="phone"><div class="bar">Edit Order · SO #812<small>Murugan Builders · Credit</small></div><div class="body">
+  <div class="lbl">MATERIAL</div>
+  <div class="line"><div class="top"><span>Flyash Bricks</span><span class="x">✕</span></div>
+   <div class="grid3" style="margin-top:6px"><div class="mini"><b>Qty (Nos)</b>2000</div><div class="mini"><b>Rate</b>₹7.50</div><div class="mini"><b>Total</b>₹15,000</div></div>
+   <span class="tag t-blue">This order</span></div>
+  <div class="search">🔍 flyash</div>
+  <div class="drop"><div class="hit">Flyash Bricks · Nos · ₹7.50  ＋</div><div>Flyash Blocks 6" · Nos · ₹38</div></div>
+  <div class="note n-blue">Was 3000 Nos — changed to 2000. Now add the other 1000 as a second line.</div>
+ </div></div></div>
+ <div class="arrow">→</div>
+ <div>
+ <div class="cap">② The second line appears — enter its quantity</div>
+ <div class="phone"><div class="bar">Edit Order · SO #812<small>Murugan Builders · Credit</small></div><div class="body">
+  <div class="lbl">MATERIAL</div>
+  <div class="line"><div class="top"><span>Flyash Bricks</span><span class="x">✕</span></div>
+   <div class="grid3" style="margin-top:6px"><div class="mini"><b>Qty (Nos)</b>2000</div><div class="mini"><b>Rate</b>₹7.50</div><div class="mini"><b>Total</b>₹15,000</div></div>
+   <span class="tag t-blue">This order</span></div>
+  <div class="line" style="border-color:#93c5fd"><div class="top"><span>Flyash Bricks</span><span class="x">✕</span></div>
+   <div class="grid3" style="margin-top:6px"><div class="mini" style="border-color:#2563eb"><b>Qty (Nos)</b>1000▏</div><div class="mini"><b>Rate</b>₹7.50</div><div class="mini"><b>Total</b>₹7,500</div></div>
+   <span class="tag t-green">New order on Save</span></div>
+  <div class="note n-blue">Total of all lines: <b>3000 Nos · ₹22,500</b> (same as before the split)</div>
+  <div class="btn b-blue">Save</div>
+ </div></div></div>
+ <div class="arrow">→</div>
+ <div>
+ <div class="cap">③ Saved — two orders, grouped, both editable</div>
+ <div class="phone"><div class="bar">Dispatch · Unassigned<small>RRP Bricks &amp; Blocks</small></div><div class="body">
+  <div class="note n-green">✓ Order updated. The added line is now <b>SO #813</b> (1000 Nos), grouped with SO #812.</div>
+  <div class="card"><span class="tag t-blue">SALE 812</span> <span class="tag t-gray">OPEN</span><div style="font-weight:700;margin-top:4px">Murugan Builders</div><div style="font-size:13px">Flyash Bricks · <b>2000 Nos</b></div><div style="font-size:12px;color:#6b7280">✏️ Edit · 🗑 Delete · Assign</div></div>
+  <div class="card"><span class="tag t-blue">SALE 813</span> <span class="tag t-gray">OPEN</span><div style="font-weight:700;margin-top:4px">Murugan Builders</div><div style="font-size:13px">Flyash Bricks · <b>1000 Nos</b></div><div style="font-size:12px;color:#6b7280">✏️ Edit · 🗑 Delete · Assign</div></div>
+  <div class="note n-amber">Each order can then be assigned to a different driver / vehicle. Editing is allowed until the order is dispatched (same rule as today).</div>
+ </div></div></div>
+</div></div>
+
+<!-- 2 -->
+<div class="sec">
+<h2>2 · Driver app — edit a delivered trip from History (add the missing delivery place)</h2>
+<div class="why"><b>Today:</b> tapping a trip in History only shows its timeline. <b>After:</b> the trip opens with an <b>Edit</b> button; the driver can add/change the delivery place, the site phone, the quantity delivered and the amount collected. Every change is saved with the driver's name and time, shows on the website, and the shared PDF prints the new values.</div>
+<div class="row">
+ <div>
+ <div class="cap">① History — the place is missing on trip 8</div>
+ <div class="phone"><div class="bar">History · 30 Sep 2026<small>Selvaraj · TN 94 X 6968</small></div><div class="body">
+  <table class="tbl"><tr><th>#</th><th>Time</th><th>Party</th><th>Place</th><th>Qty</th><th>Collected</th></tr>
+  <tr><td>7</td><td>3:10</td><td>Ravi Cont</td><td>Kombai</td><td>1</td><td>—</td></tr>
+  <tr class="sel"><td>8</td><td>5:23</td><td>Selvaraj</td><td style="color:#dc2626;font-weight:700">⚠ Not added</td><td>1</td><td>₹4,400</td></tr>
+  <tr><td>9</td><td>6:02</td><td>Kumar</td><td>Bodi</td><td>2</td><td>—</td></tr></table>
+  <div class="note n-amber" style="margin-top:10px">Trips without a delivery place show <b>⚠ Not added</b> in red. Tap the trip to fix it.</div>
+  <div class="btn b-out">📤 Share PDF</div>
+ </div></div></div>
+ <div class="arrow">→</div>
+ <div>
+ <div class="cap">② Tap the trip → details with Edit</div>
+ <div class="phone"><div class="bar">Trip 8 · 5:23 PM<small>SO #690 · 40mm · 1 Unit</small></div><div class="body">
+  <div class="card"><div class="lbl">PARTY</div>Selvaraj · 97882 34067
+   <div class="lbl" style="margin-top:8px">DELIVERY PLACE</div><span style="color:#dc2626;font-weight:700">⚠ Not added</span>
+   <div class="lbl" style="margin-top:8px">QTY · AMOUNT</div>1 Unit · ₹4,400
+   <div class="lbl" style="margin-top:8px">COLLECTED</div>₹4,400 Cash</div>
+  <div class="btn b-blue">✏️ Edit trip details</div>
+  <div class="btn b-out">🕒 Timeline</div>
+ </div></div></div>
+ <div class="arrow">→</div>
+ <div>
+ <div class="cap">③ Edit — add the place, correct anything wrong</div>
+ <div class="phone"><div class="bar">Edit Trip 8<small>Changes are seen by the office</small></div><div class="body">
+  <div class="lbl">DELIVERY PLACE *</div>
+  <div class="in warn">4 Road, Theni▏</div>
+  <div style="display:flex;gap:6px;margin:-3px 0 9px"><span class="tag t-blue">📍 Use my location</span><span class="tag t-gray">Saved sites ▾</span></div>
+  <div class="lbl">SITE PHONE</div><div class="in">97882 34067</div>
+  <div class="lbl">QTY DELIVERED</div><div class="in">1</div>
+  <div class="lbl">AMOUNT COLLECTED</div>
+  <div style="display:flex;gap:6px"><div class="in" style="flex:1">4,400</div><div class="in" style="width:96px">Cash ▾</div></div>
+  <div class="note n-blue">Collected amount still goes to the office to check (see 3).</div>
+  <div class="btn b-green">Save changes</div>
+ </div></div></div>
+</div></div>
+
+<!-- 3 -->
+<div class="sec">
+<h2>3 · Driver's collected money → office checks it before it enters the accounts</h2>
+<div class="why"><b>Today:</b> the amount the driver types at delivery immediately becomes a Payment In — Day Book, customer balance, bill paid (this is how the ₹9,34,47,06,036 phone number got into the accounts). <b>After:</b> the driver's screen is exactly the same, but the amount is only <b>noted</b> on the trip (History, trip sheet PDF, driver's cash in hand). Nothing reaches the Day Book, Payment In, the bill or the customer balance until the office records it on the new <b>Collections to check</b> page.</div>
+<div class="row">
+ <div>
+ <div class="cap">① Driver — Complete Delivery (same screen)</div>
+ <div class="phone"><div class="bar">✅ Complete Delivery<small>SO #690 · Selvaraj</small></div><div class="body">
+  <div class="lbl">AMOUNT COLLECTED</div><div style="font-size:11px;color:#6b7280;margin-bottom:4px">Bill Total: ₹4,400</div>
+  <div class="in" style="font-weight:700;font-size:17px">4,400</div>
+  <div class="lbl">PAYMENT MODE</div>
+  <div style="display:flex;gap:6px;margin-bottom:9px"><span class="sbtn b-blue">Cash</span><span class="sbtn b-out">UPI</span><span class="sbtn b-out">Bank</span></div>
+  <div class="lbl">REFERENCE NO (optional)</div><div class="in empty">UPI ref #, cheque #</div>
+  <div class="btn b-green">Done</div>
+  <div class="note n-gray" style="background:#f3f4f6;color:#374151">Nothing changes for the driver.</div>
+ </div></div></div>
+ <div class="arrow">→</div>
+ <div class="web">
+  <div class="wtop"><span>Website · Cash Flow → Collections to check</span><span style="font-weight:400">RRP Infra</span></div>
+  <div class="wbody">
+   <div class="stats"><div class="stat"><b>₹38,600</b><span>To check (9)</span></div><div class="stat"><b>₹1,12,400</b><span>Recorded this week</span></div><div class="stat"><b>₹2,000</b><span>Not received (1)</span></div></div>
+   <div style="margin-bottom:10px"><span class="chip on">To check</span><span class="chip">Recorded</span><span class="chip">Not received</span><span class="chip">📅 30 Sep</span><span class="chip">Driver: All ▾</span></div>
+   <table class="wt"><tr><th>Date · time</th><th>Driver</th><th>Customer · trip</th><th>Bill</th><th style="text-align:right">Driver says</th><th>Mode</th><th>Action</th></tr>
+    <tr><td>30 Sep · 5:23 PM</td><td>Selvaraj</td><td>Selvaraj 97882…<br><span style="color:#64748b;font-size:11.5px">SO #690 · 40mm · 1 Unit</span></td><td>#1204 ₹4,400</td><td style="text-align:right;font-weight:700">₹4,400</td><td>Cash</td>
+     <td><span class="sbtn b-green">✓ Record</span><span class="sbtn b-out">Edit amount</span><span class="sbtn" style="color:#b91c1c;border:1px solid #fecaca">Not received</span></td></tr>
+    <tr style="background:#fef2f2"><td>30 Sep · 6:40 PM</td><td>Deva</td><td>Kumar Cont<br><span style="color:#64748b;font-size:11.5px">SO #702 · M-Sand · 2 Unit</span></td><td>#1209 ₹9,200</td><td style="text-align:right;font-weight:700;color:#b91c1c">₹9,34,47,06,036<br><span style="font-size:11px;font-weight:600">⚠ far above the bill</span></td><td>Cash</td>
+     <td><span class="sbtn b-out">Edit amount</span><span class="sbtn" style="color:#b91c1c;border:1px solid #fecaca">Not received</span></td></tr>
+    <tr><td>30 Sep · 7:05 PM</td><td>Deva</td><td>Ravi Cont<br><span style="color:#64748b;font-size:11.5px">SO #705 · 20mm · 1 Unit</span></td><td>#1211 ₹3,000</td><td style="text-align:right;font-weight:700">₹3,000</td><td>UPI</td>
+     <td><span class="sbtn b-green">✓ Record</span><span class="sbtn b-out">Edit amount</span><span class="sbtn" style="color:#b91c1c;border:1px solid #fecaca">Not received</span></td></tr>
+   </table>
+   <div class="note n-blue" style="margin-top:12px"><b>✓ Record</b> creates the real Payment In (customer, amount, mode, date, driver) and applies it to that trip's bill — it then shows in Day Book, Payment In, the bill and the customer's balance. <b>Edit amount</b> lets the office record a different figure. <b>Not received</b> keeps it out of the accounts. Select several rows → <b>Record selected</b>.</div>
+  </div>
+ </div>
+</div></div>
+</body></html>
