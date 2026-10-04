@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Flyash single place</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#eef1f6;color:#111827;padding:28px 32px}
+h1{font-size:26px;margin-bottom:4px}.sub{color:#4b5563;font-size:14px;margin-bottom:20px}
+.sec{background:#fff;border-radius:16px;padding:20px 22px 24px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.sec h2{font-size:19px;margin-bottom:6px}.why{font-size:13.5px;color:#374151;margin-bottom:14px;line-height:1.55}
+.cols{display:flex;gap:18px}.col{flex:1;border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.55}
+.old{background:#fef2f2;border:1px solid #fecaca}.new{background:#f0fdf4;border:1px solid #bbf7d0}
+.col b.h{display:block;font-size:14px;margin-bottom:6px}
+.web{border:1px solid #d1d5db;border-radius:12px;overflow:hidden}
+.wtop{background:#0f172a;color:#fff;padding:10px 16px;font-weight:700;font-size:14px;display:flex;justify-content:space-between}
+.wb{padding:14px 16px}
+.stats{display:flex;gap:10px;margin-bottom:12px}.stat{flex:1;border:1px solid #e2e8f0;border-radius:10px;padding:10px 12px}.stat b{display:block;font-size:20px}.stat span{font-size:11.5px;color:#64748b}
+.chip{display:inline-block;border:1px solid #cbd5e1;border-radius:999px;padding:4px 12px;font-size:12px;margin-right:6px}.chip.on{background:#0f172a;color:#fff;border-color:#0f172a}
+table{width:100%;border-collapse:collapse;font-size:13px}th{background:#f8fafc;text-align:left;padding:8px;font-size:11.5px;color:#475569;border-bottom:1px solid #e2e8f0}td{padding:9px 8px;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+.tag{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:2px 9px}
+.inf{background:#dbeafe;color:#1d4ed8}.bb{background:#ede9fe;color:#6d28d9}.und{background:#fef3c7;color:#b45309}
+.seg{display:inline-flex;border:1px solid #cbd5e1;border-radius:8px;overflow:hidden;font-size:12px;font-weight:700}
+.seg span{padding:5px 10px}.seg .a{background:#1d4ed8;color:#fff}.seg .b{background:#6d28d9;color:#fff}
+.btn{display:inline-block;border-radius:8px;padding:6px 12px;font-size:12.5px;font-weight:700}
+.row{display:flex;gap:24px;align-items:flex-start}
+.phone{width:320px;border:10px solid #111827;border-radius:32px;background:#f9fafb;overflow:hidden;flex:none}
+.bar{background:#2563eb;color:#fff;padding:12px 14px;font-weight:700;font-size:15px}.bar small{display:block;font-weight:400;font-size:11px;opacity:.85}
+.pb{padding:10px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:10px 12px;margin-bottom:9px;font-size:13px}
+.note{font-size:12px;border-radius:9px;padding:8px 10px;margin-top:10px;line-height:1.45;background:#eff6ff;color:#1e3a8a}
+</style></head><body>
+<h1>Flyash — one place for every Flyash bill (plan)</h1>
+<div class="sub">Same page on both websites and in the owner app. Nothing is built yet.</div>
+
+<div class="sec"><h2>Today vs. after</h2>
+<div class="cols">
+ <div class="col old"><b class="h">Today — 4 screens, 2 steps</b>
+ • Infra → <b>FlyAsh</b> tab: Flyash bills made in Infra → <b>Move</b> (waiting)<br>
+ • B&amp;B → <b>Infra Orders</b> tab: Infra bills (view) · <b>Bills to accept</b> → Accept / Send back · <b>Old bills to Infra</b><br>
+ • B&amp;B → Bills: bills made in B&amp;B itself (not on the Infra screens)<br>
+ • A moved bill becomes <b>one B&amp;B bill per item</b> and loses its discount<br>
+ • Nobody sees all Flyash bills together, and a move needs two people/steps</div>
+ <div class="col new"><b class="h">After — 1 screen, 1 step</b>
+ • <b>Flyash Bills</b>: every Flyash bill from <b>both</b> businesses in one list<br>
+ • Each bill shows where it is now: <span class="tag inf">Infra</span> <span class="tag bb">B&amp;B</span> or <span class="tag und">To decide</span><br>
+ • Owner/Admin picks <b>Infra</b> or <b>B&amp;B</b> — it moves at once (no accept step), either direction<br>
+ • A moved bill stays <b>one bill</b> with all its items, discount, place and notes; cash on delivery moves with it; payments already received stay where they were<br>
+ • Old Move / Accept / Send back / Old bills screens are removed (Raja / Ragupathi tabs stay until settled)</div>
+</div></div>
+
+<div class="sec"><h2>Website — Flyash Bills (same on RRP Infra and RRP Bricks &amp; Blocks)</h2>
+<div class="web"><div class="wtop"><span>Flyash Bills</span><span style="font-weight:400">Owner · Gokul</span></div><div class="wb">
+ <div class="stats"><div class="stat"><b>12</b><span>To decide · ₹3,84,000</span></div><div class="stat"><b>41</b><span>In Infra · ₹12,60,500</span></div><div class="stat"><b>67</b><span>In Bricks &amp; Blocks · ₹19,02,300</span></div></div>
+ <div style="margin-bottom:10px"><span class="chip on">To decide (12)</span><span class="chip">Infra</span><span class="chip">Bricks &amp; Blocks</span><span class="chip">All</span><span class="chip">📅 1 Oct – 4 Oct</span><span class="chip">🔍 Customer / bill no</span></div>
+ <table><tr><th><input type="checkbox"></th><th>Date</th><th>Bill</th><th>Customer · place</th><th>Material</th><th style="text-align:right">Qty</th><th style="text-align:right">Amount</th><th>Now in</th><th>Put in</th></tr>
+ <tr><td><input type="checkbox" checked></td><td>4 Oct</td><td>Infra #1251</td><td>Murugan Builders<br><span style="color:#64748b;font-size:11.5px">Kombai · SO #812</span></td><td>Flyash Bricks</td><td style="text-align:right">2000 Nos</td><td style="text-align:right">₹15,000</td><td><span class="tag und">To decide</span></td><td><span class="seg"><span>Infra</span><span>B&amp;B</span></span></td></tr>
+ <tr><td><input type="checkbox" checked></td><td>4 Oct</td><td>Infra #1252</td><td>Murugan Builders<br><span style="color:#64748b;font-size:11.5px">Kombai · SO #813</span></td><td>Flyash Bricks</td><td style="text-align:right">1000 Nos</td><td style="text-align:right">₹7,500</td><td><span class="tag und">To decide</span></td><td><span class="seg"><span>Infra</span><span>B&amp;B</span></span></td></tr>
+ <tr><td><input type="checkbox"></td><td>3 Oct</td><td>B&amp;B #318</td><td>Ravi Cont<br><span style="color:#64748b;font-size:11.5px">Bodi · SO #77</span></td><td>Hollow Block 6"</td><td style="text-align:right">400 Nos</td><td style="text-align:right">₹15,200</td><td><span class="tag bb">B&amp;B</span></td><td><span class="seg"><span>Infra</span><span class="b">B&amp;B</span></span></td></tr>
+ <tr><td><input type="checkbox"></td><td>2 Oct</td><td>B&amp;B #317 <span style="color:#64748b;font-size:11px">(from Infra #1240)</span></td><td>Kumar<br><span style="color:#64748b;font-size:11.5px">Theni · SO #801</span></td><td>Flyash Bricks</td><td style="text-align:right">3000 Nos</td><td style="text-align:right">₹22,500</td><td><span class="tag bb">B&amp;B</span></td><td><span class="seg"><span>Infra</span><span class="b">B&amp;B</span></span></td></tr>
+ <tr><td><input type="checkbox"></td><td>1 Oct</td><td>Infra #1231</td><td>Selvan<br><span style="color:#64748b;font-size:11.5px">Ckp · SO #790</span></td><td>Flyash Bricks</td><td style="text-align:right">1500 Nos</td><td style="text-align:right">₹11,250</td><td><span class="tag inf">Infra</span></td><td><span class="seg"><span class="a">Infra</span><span>B&amp;B</span></span></td></tr>
+ </table>
+ <div style="margin-top:12px;display:flex;gap:8px;align-items:center"><span style="font-size:13px">2 selected · ₹22,500 →</span><span class="btn" style="background:#1d4ed8;color:#fff">Keep in Infra</span><span class="btn" style="background:#6d28d9;color:#fff">Put in Bricks &amp; Blocks</span></div>
+ <div class="note">Tapping <b>B&amp;B</b> on an Infra bill moves it at once: Bricks &amp; Blocks gets the same bill (all items, discount, place, notes) and the Infra bill + its purchase are cancelled — the same thing Accept does today, without the second step. Tapping <b>Infra</b> on a B&amp;B bill moves it back the same way. Every move is in the audit log with who did it.</div>
+</div></div></div>
+
+<div class="sec"><h2>Owner app — the same list</h2>
+<div class="row">
+ <div class="phone"><div class="bar">Flyash Bills<small>Infra + Bricks &amp; Blocks</small></div><div class="pb">
+  <div style="margin-bottom:8px"><span class="chip on">To decide 12</span><span class="chip">Infra</span><span class="chip">B&amp;B</span></div>
+  <div class="card"><div style="display:flex;justify-content:space-between"><b>Murugan Builders</b><span class="tag und">To decide</span></div>Infra #1251 · 4 Oct · Kombai<br>Flyash Bricks · <b>2000 Nos</b> · ₹15,000
+   <div style="margin-top:8px;display:flex;gap:6px"><span class="btn" style="flex:1;text-align:center;border:1px solid #1d4ed8;color:#1d4ed8">Infra</span><span class="btn" style="flex:1;text-align:center;background:#6d28d9;color:#fff">B&amp;B</span></div></div>
+  <div class="card"><div style="display:flex;justify-content:space-between"><b>Kumar</b><span class="tag bb">B&amp;B</span></div>B&amp;B #317 (from Infra #1240) · 2 Oct<br>Flyash Bricks · <b>3000 Nos</b> · ₹22,500</div>
+ </div></div>
+ <div style="flex:1;font-size:13.5px;line-height:1.6">
+  <b>Which bills are listed</b><br>• Every bill of RRP Bricks &amp; Blocks.<br>• Every RRP Infra bill for a Flyash product (the products linked to a Bricks &amp; Blocks product, e.g. "Flyash Bricks").<br><br>
+  <b>"To decide"</b><br>• New Flyash bills made in Infra (from Infra orders) stay in Infra marked <b>To decide</b> until the owner picks. Bills waiting in today's Move/Accept are shown as To decide on go-live.<br><br>
+  <b>Who</b><br>• Everyone (except drivers) sees the list; only <b>Owner / Admin</b> can move bills.<br><br>
+  <b>Not allowed to move</b> (shown with the reason)<br>• Bill sent in a GST bill, cancelled, or with a payment from Payment In applied (remove it first) — same rules as today.
+ </div>
+</div></div>
+</body></html>
